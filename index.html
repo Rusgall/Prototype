@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!— Required meta tags —>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!— Bootstrap CSS —>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<title>Test</title>
+</head>
+<body>
+        <ul class="nav nav-tabs">
+<li class="nav-item">
+<a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#muted-tests" role="tab" aria-controls="nav-home" aria-selected="true">Muted tests</a>
+</li>
+<li class="nav-item">
+<a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#long-tests" role="tab" aria-controls="nav-profile" aria-selected="false">Long tests</a>
+</li>
+<li class="nav-item">
+<a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#unstable-tests" role="tab" aria-controls="nav-profile" aria-selected="false">Unstable tests</a>
+</li>
+</ul>
+  <div class="row">
+    <nav class="col-1">
+      <div class="sidebar-sticky">
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">
+              Team 1
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              Team 2
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              Team 3
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              Team 4
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              Team 5
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              Team 6
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <main class="col-10">
+
+<div class="container">
+<div class="tab-content" id="myTabContent">
+<div class="tab-pane fade show active" id="muted-tests" role="tabpanel" aria-labelledby="muted-tests-tab">
+<div class="card mb-3 mt-3 text-white bg-primary">
+<div class="card-header" data-toggle="collapse" data-target="#test-case-1">
+<div class="row">
+<div class="col-1">10000</div>
+<div class="col-10">Test Name</div>
+<div class="col-1 dropdown-toggle">Mutes: 1</div>
+</div>
+</div>
+<div class="collapse" id="test-case-1">
+<div class="card-body">
+<div class="row">
+<div class="col-6">Mute description</div>
+<div class="col-6 text-right">13/04/2020</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="card mb-3">
+<div class="card-header" data-toggle="collapse" data-target="#test-case-2">
+<div class="row">
+<div class="col-1">10001</div>
+<div class="col-10">Test Name 2</div>
+<div class="col-1 dropdown-toggle">Mutes: 2</div>
+</div>
+</div>
+<div class="collapse" id="test-case-2">
+<div class="card-body">
+<div class="row">
+<div class="col-6">Mute description 1</div>
+<div class="col-6 text-right">01/01/2020</div>
+</div>
+<div class="row">
+<div class="col-6">Mute description 2</div>
+<div class="col-6 text-right">15/03/2020</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="card mb-3">
+<div class="card-header" data-toggle="collapse" data-target="#test-case-3">
+<div class="row">
+<div class="col-1">10002</div>
+<div class="col-10">Test Name 3</div>
+<div class="col-1 dropdown-toggle">Mutes: 1</div>
+</div>
+</div>
+<div class="collapse" id="test-case-3">
+<div class="card-body">
+<div class="row">
+<div class="col-6">Mute description</div>
+<div class="col-6 text-right">22/02/2020</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="card mb-3 text-white bg-danger">
+<div class="card-header" data-toggle="collapse" data-target="#test-case-4">
+<div class="row">
+<div class="col-1">10003</div>
+<div class="col-10">Test Name 4</div>
+<div class="col-1 dropdown-toggle">Mutes: 1</div>
+</div>
+</div>
+<div class="collapse" id="test-case-4">
+<div class="card-body">
+<div class="row">
+<div class="col-6">Mute description</div>
+<div class="col-6 text-right">03/04/2019</div>
+</div>
+</div>
+</div>
+</div>
+
+<span class="badge badge-primary">Blue</span> - tasks completed, but test still fails
+<br/>
+<span class="badge badge-warning">Yellow</span> - test will be marked for deleting soon
+<br/>
+<span class="badge badge-danger">Red</span> - test has been marked for deleting
+
+</div>
+<div class="tab-pane fade" id="long-tests" role="tabpanel" aria-labelledby="long-tests-tab">
+    <h3>Tests with avg time more than 40s</h3>
+
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th scope="col" width="10%">Allure Id</th>
+      <th scope="col" width="70%">Test name</th>
+      <th scope="col" width="10%">Avg time</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>20000</td>
+      <td>Test name 1</td>
+      <td>42s</td>
+    </tr>
+    <tr class="table-warning">
+      <td>20001</td>
+      <td>Test name 2</td>
+      <td>1m 28s</td>
+    </tr>
+    <tr class="table-danger">
+      <td>20002</td>
+      <td>Test name 3</td>
+      <td>1m 35s</td>
+    </tr>
+        <tr>
+      <td>20003</td>
+      <td>Test name 4</td>
+      <td>44s</td>
+    </tr>
+        <tr>
+      <td>20004</td>
+      <td>Test name 5</td>
+      <td>52s</td>
+    </tr>
+        <tr class="table-danger">
+      <td>20005</td>
+      <td>Test name 6</td>
+      <td>2m 15s</td>
+    </tr>
+        <tr class="table-warning">
+      <td>20006</td>
+      <td>Test name 7</td>
+      <td>1m 12s</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="badge badge-warning">Yellow</span> - test is slow, please fix it.
+<br/>
+<span class="badge badge-danger">Red</span> - test is very slow, it will be muted soon
+</div>
+
+<div class="tab-pane fade" id="unstable-tests" role="tabpanel" aria-labelledby="unstable-tests-tab">
+  <h3>Web tests with success rate less than 85%</h3>
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th scope="col" width="10%">Allure Id</th>
+      <th scope="col" width="70%">Test name</th>
+      <th scope="col" width="10%">Success rate</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>30000</td>
+      <td>Test name 1</td>
+      <td>85%</td>
+    </tr>
+    <tr>
+      <td>30001</td>
+      <td>Test name 2</td>
+      <td>85%</td>
+    </tr>
+    <tr class="table-warning">
+      <td>30002</td>
+      <td>Test name 3</td>
+      <td>77%</td>
+    </tr>
+        <tr>
+      <td>30003</td>
+      <td>Test name 4</td>
+      <td>84%</td>
+    </tr>
+        <tr class="table-danger">
+      <td>30004</td>
+      <td>Test name 5</td>
+      <td>70%</td>
+    </tr>
+  </tbody>
+</table>
+
+<br/>
+
+  <h3>Rest tests with success rate less than 98%</h3>
+<table class="table table-hover">
+    <tr>
+      <th scope="col" width="10%">Allure Id</th>
+      <th scope="col" width="70%">Test name</th>
+      <th scope="col" width="10%">Success rate</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>30010</td>
+      <td>Test name 6</td>
+      <td>98%</td>
+    </tr>
+    <tr class="table-danger">
+      <td>30011</td>
+      <td>Test name 7</td>
+      <td>95%</td>
+    </tr>
+    <tr class="table-warning">
+      <td>30012</td>
+      <td>Test name 8</td>
+      <td>97%</td>
+    </tr>
+        <tr class="table-danger">
+      <td>30013</td>
+      <td>Test name 9</td>
+      <td>96%</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="badge badge-warning">Yellow</span> - test is unstable, please fix it.
+<br/>
+<span class="badge badge-danger">Red</span> - test is too unstable, it will be muted soon
+</div>
+</div>
+</div>
+    </main>
+
+</div>
+
+
+
+<!— Optional JavaScript —>
+<!— jQuery first, then Popper.js, then Bootstrap JS —>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+ 
+crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
